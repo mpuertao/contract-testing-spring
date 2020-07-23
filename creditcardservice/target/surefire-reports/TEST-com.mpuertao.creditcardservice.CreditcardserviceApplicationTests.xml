@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.mpuertao.creditcheckservice.CreditcardserviceTest" time="2.694" tests="2" errors="0" skipped="0" failures="0">
+<testsuite name="com.mpuertao.creditcardservice.CreditcardserviceApplicationTests" time="0.683" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Apps\java-1.8.0-openjdk-1.8.0.242-3\jre\bin"/>
     <property name="java.vm.version" value="25.242-b08"/>
     <property name="java.vm.vendor" value=""/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Proyectos Desarrollo\Spring\SPRING-CLOUD-CONTRACT-POR-RAMAS\contract-testing-spring\creditcheckservice"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Proyectos Desarrollo\Spring\SPRING-CLOUD-CONTRACT-POR-RAMAS\contract-testing-spring\creditcardservice"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Proyectos Desarrollo\Spring\SPRING-CLOUD-CONTRACT-POR-RAMAS\contract-testing-spring\creditcheckservice"/>
+    <property name="user.dir" value="C:\Proyectos Desarrollo\Spring\SPRING-CLOUD-CONTRACT-POR-RAMAS\contract-testing-spring\creditcardservice"/>
     <property name="java.runtime.version" value="1.8.0_242-b08"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Apps\java-1.8.0-openjdk-1.8.0.242-3\jre\lib\endorsed"/>
@@ -40,7 +40,7 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="mpuer"/>
-    <property name="java.class.path" value="C:\Proyectos Desarrollo\Spring\SPRING-CLOUD-CONTRACT-POR-RAMAS\contract-testing-spring\creditcheckservice\.mvn\wrapper\maven-wrapper.jar"/>
+    <property name="java.class.path" value="C:\Proyectos Desarrollo\Spring\SPRING-CLOUD-CONTRACT-POR-RAMAS\contract-testing-spring\creditcardservice\.mvn\wrapper\maven-wrapper.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Apps\java-1.8.0-openjdk-1.8.0.242-3\jre"/>
@@ -63,6 +63,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="validate_shouldGrantACreditScoreHighToACitizen" classname="com.mpuertao.creditcheckservice.CreditcardserviceTest" time="2.595"/>
-  <testcase name="validate_shouldDenyACreditScoreLowACitizen" classname="com.mpuertao.creditcheckservice.CreditcardserviceTest" time="0.099"/>
+  <testcase name="shouldGrantApplicationWhenCreditScoreIsHigh" classname="com.mpuertao.creditcardservice.CreditcardserviceApplicationTests" time="0.639"/>
+  <testcase name="shouldDenyApplicationWhenCreditScoreIsLow" classname="com.mpuertao.creditcardservice.CreditcardserviceApplicationTests" time="0.044"/>
 </testsuite>

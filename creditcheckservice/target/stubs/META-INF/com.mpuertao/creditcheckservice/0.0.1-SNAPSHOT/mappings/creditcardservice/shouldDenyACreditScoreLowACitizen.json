@@ -1,5 +1,5 @@
 {
-  "id" : "4c1c5b9f-9fa2-483f-808c-bfc4018f4376",
+  "id" : "1e615203-5ed9-4ecf-acb0-5bb61aea39cf",
   "request" : {
     "url" : "/credit-scores",
     "method" : "POST",
@@ -9,16 +9,16 @@
       }
     },
     "bodyPatterns" : [ {
-      "matchesJsonPath" : "$[?(@.['citizenNumber'] == 1234)]"
+      "matchesJsonPath" : "$[?(@.['citizenNumber'] == 4444)]"
     } ]
   },
   "response" : {
     "status" : 200,
-    "body" : "{\"score\":\"HIGH\"}",
+    "body" : "{\"score\":\"LOW\"}",
     "headers" : {
       "Content-Type" : "application/json"
     },
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "4c1c5b9f-9fa2-483f-808c-bfc4018f4376"
+  "uuid" : "1e615203-5ed9-4ecf-acb0-5bb61aea39cf"
 }

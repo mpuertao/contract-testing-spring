@@ -14,6 +14,25 @@ import static org.springframework.cloud.contract.verifier.assertion.SpringCloudC
 public class CreditcardserviceTest extends BaseContractTest {
 
 	@Test
+	public void validate_shouldDenyACreditScoreLowACitizen() throws Exception {
+		// given:
+			MockMvcRequestSpecification request = given()
+					.header("Content-Type", "application/json")
+					.body("{\"citizenNumber\":4444}");
+
+		// when:
+			ResponseOptions response = given().spec(request)
+					.post("/credit-scores");
+
+		// then:
+			assertThat(response.statusCode()).isEqualTo(200);
+			assertThat(response.header("Content-Type")).matches("application/json.*");
+		// and:
+			DocumentContext parsedJson = JsonPath.parse(response.getBody().asString());
+			assertThatJson(parsedJson).field("['score']").isEqualTo("LOW");
+	}
+
+	@Test
 	public void validate_shouldGrantACreditScoreHighToACitizen() throws Exception {
 		// given:
 			MockMvcRequestSpecification request = given()
