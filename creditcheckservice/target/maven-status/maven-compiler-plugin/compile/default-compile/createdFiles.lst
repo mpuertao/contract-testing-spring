@@ -1,0 +1,6 @@
+com\mpuertao\creditcheckservice\gateway\CreditCheckResponse$Score.class
+com\mpuertao\creditcheckservice\gateway\CreditCheckResponse.class
+com\mpuertao\creditcheckservice\controller\CreditCheckController.class
+com\mpuertao\creditcheckservice\gateway\CreditCheckRequest.class
+com\mpuertao\creditcheckservice\CreditcheckserviceApplication.class
+com\mpuertao\creditcheckservice\service\CreditCheckService.class
